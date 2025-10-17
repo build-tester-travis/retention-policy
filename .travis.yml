@@ -1,4 +1,3 @@
-#test
 os: linux
 language: java
 services:
@@ -6,6 +5,9 @@ services:
 cache: bundler
 dist: focal
 install: skip
+
+env:
+  - CONFIG_REFRESH=1
 
 stages:
   - name: test
